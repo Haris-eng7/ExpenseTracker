@@ -1,15 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Main from "./Main";
-import TransactionsProvider from "./TransactionsProvider";
+import { TransactionProvider } from "./TransactionsContext";
 
 function App() {
   return (
-    <div className="App">
-      <TransactionsProvider>
+    <TransactionProvider>
+      <div className="App">
         <Main />
-      </TransactionsProvider>
-    </div>
+      </div>
+    </TransactionProvider>
   );
 }
 

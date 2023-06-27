@@ -1,5 +1,3 @@
-import React from "react";
-
 const TransactionsReducer = (state, action) => {
   switch (action.type) {
     case "ADD": {
